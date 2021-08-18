@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" name=renderer  content=webkit>
+<link rel="shortcut icon" href="favicon.ico"/>
+<title>Chogoo</title>
+<script type="text/javascript">
+function getValue()
+  {
+  var x=document.getElementById("myHeader").value
+  if(x){
+  window.location.href='https://cn.bing.com/search?q='+x
+  }else{
+  window.location.href=''
+  }}
+</script>
+   <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/css/mdui.min.css"
+      integrity="sha384-cLRrMq39HOZdvE0j6yBojO4+1PrHfB7a9l5qLcmRm/fiWXYY+CndJPmyu5FV/9Tw"
+      crossorigin="anonymous"
+    />
+    <style>
+        .main{
+	text-align: center; /*让div内部文字居中*/
+	
+	border-radius: 20px;
+	width: 80%;
+	height: 350px;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+        
+    </style>
+</head>
+<body class='mdui-theme-layout-dark mdui-text-color-white-* '>
+    <div class="mdui-container main">
+    <br>
+    <div class="mdui-container" style='font-weight: 100; text-align:center;'>
+    <div class="mdui-divider"></div>
+    <h1 style="font-weight:lighter">Chogoo·Search</h1>
+    <div class="mdui-divider"></div>
+    <br>
+    <div class="mdui-textfield">
+     <input class="mdui-textfield-input" type='text' id="myHeader" placeholder="输入文字以搜索...">
+    </div>
+   
+      <div><button class='mdui-btn mdui-color-grey-800' onclick="getValue()" style:'width:100%'>点我搜索</button></div><br>
+     <div class="mdui-divider"></div><br>
+     请选择搜索引擎：<br><br><br>
+     <a href='index.html' class='mdui-btn mdui-ripple mdui-color-light-blue-100'>Bing</a>
+     <a href='ifrab.html' class='mdui-btn mdui-ripple' >百度</a>
+     <a href='ifrawww.html' class='mdui-btn mdui-ripple' >网址直连</a>
+     
+    </div>
+
+</body>
+</html>
